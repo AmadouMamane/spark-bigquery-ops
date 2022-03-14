@@ -1,16 +1,13 @@
-package com.rcibanque.ckm.commons.database.bigquery
+package com.mydevs.database.bigquery
 
 import com.google.cloud.bigquery.Field.Mode
 import com.google.cloud.bigquery.StandardSQLTypeName._
 import com.google.cloud.bigquery.StandardTableDefinition.StreamingBuffer
 import com.google.cloud.bigquery.TableDefinition.Type
-import com.google.cloud.bigquery.{Option => BqOption, _}
+import com.google.cloud.bigquery._
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types._
 import org.slf4j.LoggerFactory
-
-import scala.collection.JavaConversions.asScalaBuffer
-import scala.collection.JavaConverters._
 
 /**
  * Utilities for interacting with BigQuery using the java bigquery API.

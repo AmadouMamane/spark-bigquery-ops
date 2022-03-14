@@ -1,8 +1,5 @@
-package com.rcibanque.ckm.commons.database.bigquery
+package com.mydevs.database.bigquery
 
-import java.math.{BigDecimal => JBigDecimal}
-
-import com.rcibanque.ckm.commons.database.bigquery.BigQueryWriteUtils.BQColumnComment
 import org.apache.spark.sql.catalyst.expressions.GenericRowWithSchema
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.{Dataset, Row, SparkSession}

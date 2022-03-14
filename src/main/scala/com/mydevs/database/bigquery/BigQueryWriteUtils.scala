@@ -1,10 +1,7 @@
-package com.rcibanque.ckm.commons.database.bigquery
-
-import java.math.{BigDecimal => JBigDecimal}
+package com.mydevs.database.bigquery
 
 import com.google.cloud.bigquery.StandardTableDefinition.StreamingBuffer
 import com.google.cloud.bigquery.{EncryptionConfiguration, SnapshotTableDefinition, TableDefinition}
-import com.rcibanque.ckm.commons.database.bigquery.BigQueryConnection._
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.{Dataset, Row, SparkSession}
 import org.joda.time.{DateTimeZone, LocalDate, LocalDateTime}
@@ -116,10 +113,10 @@ object BigQueryWriteUtils {
       dataFrameToWrite.write.format("bigquery").option("table", fullPartitionedTableName).options(writeOptions).mode(writeMode).save()
 
       //Updating table schema is needing in case of overwrite and the user specified some table properties in the create table options
-      if (createBqTableIfNotExists && manageBigDecimalTypes.isDefined && manageBigDecimalTypes.get ) {
+      if (createBqTableIfNotExists && manageBigDecimalTypes.isDefined && manageBigDecimalTypes.get) {
         updateTableSchema(bqDatasetName, bqTableName, projectId, Some(dataFrameToWrite.schema), partitioningMetadata,
-        clusteringFields, requirePartitionFilter, friendlyName,
-        description, location, labels, tableType, materializedView, columnsMetadata, view, externalDataConfiguration, encryptionConfiguration, streamingBuffer, snapshotTableDefinition, numBytes, numLongTermBytes, numRows, expirationTime)
+          clusteringFields, requirePartitionFilter, friendlyName,
+          description, location, labels, tableType, materializedView, columnsMetadata, view, externalDataConfiguration, encryptionConfiguration, streamingBuffer, snapshotTableDefinition, numBytes, numLongTermBytes, numRows, expirationTime)
       }
 
     } else {
