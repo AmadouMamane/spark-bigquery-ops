@@ -11,6 +11,8 @@ import org.slf4j.LoggerFactory
 
 /**
  * Utilities for interacting with BigQuery using the java bigquery API.
+ *
+ * ==Overview==
  * This includes table creation, table schema update, table existence checking
  * More utilities will be added later
  */

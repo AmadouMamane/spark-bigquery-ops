@@ -12,7 +12,7 @@ Here is a brief description for each package of the source code.
 
 [source,scala]
 ----
-include::./src/main/scala/com/rcibanque/ckm/commons/package.scala[lines=1..14]
+include::./src/main/scala/com/mydevs/database/bigquery/BigQueryConnection.scala[lines=12..16]
 ----
 
 [source,scala]
