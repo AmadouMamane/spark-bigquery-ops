@@ -1,0 +1,48 @@
+# Commons project
+
+## Commons project documentation
+
+### Project description
+
+Commons project is intended to summarize common functions in a single project.
+
+### Package descriptions
+
+Here is a brief description for each package of the source code.
+
+[source,scala]
+----
+include::./src/main/scala/com/rcibanque/ckm/commons/package.scala[lines=1..14]
+----
+
+[source,scala]
+----
+include::./src/main/scala/com/rcibanque/ckm/commons/common/package.scala[lines=1..14]
+----
+
+[source,scala]
+----
+include::./src/main/scala/com/rcibanque/ckm/commons/conf/package.scala[lines=1..14]
+----
+
+[source,scala]
+----
+include::./src/main/scala/com/rcibanque/ckm/commons/database/package.scala[lines=1..14]
+----
+
+[source,scala]
+----
+include::./src/main/scala/com/rcibanque/ckm/commons/exceptions/package.scala[lines=1..14]
+----
+
+[source,scala]
+----
+include::./src/main/scala/com/rcibanque/ckm/commons/files/package.scala[lines=1..14]
+----
+
+[source,scala]
+----
+include::./src/main/scala/com/rcibanque/ckm/commons/util/package.scala[lines=1..14]
+----
+
+
