@@ -8,6 +8,4 @@ package com.mydevs.database.bigquery
  *  - Creating Big Query tables dynamically
  *  - Handling Big Decimal values when writting and reading
  */
-package object bigquery {
-
-}
+package object bigquery {}
