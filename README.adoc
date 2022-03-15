@@ -1,8 +1,11 @@
+include::_settings_reveal.adoc[]
 # Spark Big Query Utils
+
+:imagesdir: images
 
  :revnumber: v1.1
  :revdate: 15.03.2022
- :revremark: First draft
+ :revremark: initial release
  :author: Amadou Mamane
  :email: mamanesarki@yahoo.fr
 
