@@ -1,4 +1,6 @@
 include::_settings_reveal.adoc[]
+
+
 # Spark Big Query Utils
 
 :imagesdir: images
