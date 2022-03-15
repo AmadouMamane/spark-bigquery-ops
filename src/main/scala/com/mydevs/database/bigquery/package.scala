@@ -1,4 +1,4 @@
-package com.mydevs.database
+package com.mydevs.database.bigquery
 
 /**
  * Contains utilities for interacting with Big Query using Spark
