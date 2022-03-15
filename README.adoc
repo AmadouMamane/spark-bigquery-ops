@@ -1,10 +1,18 @@
-# Commons project
+# Spark Big Query Utils
+ :author: Amadou Mamane
+ :email: mamanesarki@yahoo.fr
+ :revnumber: v1.1
+ :revdate: 15.03.2022
+ :revremark: First draft
+ :author: Amadou Mamane
+ :email: mamanesarki@yahoo.fr
 
-## Commons project documentation
+## Project documentation
+
 
 ### Project description
 
-Commons project is intended to summarize common functions in a single project.
+Spark Big Query Utils project provides utilities for interacting with Big Query tables using Spark
 
 ### Package descriptions
 
@@ -12,12 +20,12 @@ Here is a brief description for each package of the source code.
 
 [source,scala]
 ----
-include::./src/main/scala/com/mydevs/database/bigquery/BigQueryConnection.scala[lines=12..16]
+include::./src/main/scala/com/mydevs/database/bigquery/package.scala[lines=1..14]
 ----
 
 [source,scala]
 ----
-include::./src/main/scala/com/rcibanque/ckm/commons/common/package.scala[lines=1..14]
+include::./src/main/scala/com/mydevs/database/bigquery/BigQueryConnection.scala[lines=12..16]
 ----
 
 [source,scala]
