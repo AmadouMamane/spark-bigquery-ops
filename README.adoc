@@ -1,7 +1,6 @@
-include::_settings_reveal.adoc[]
-
-
 # Spark Big Query Utils
+
+//include::_settings_reveal.adoc[]
 
 :imagesdir: images
 
@@ -24,7 +23,7 @@ Here is a brief description for each package of the source code
 
 [source,scala]
 ----
-include::src/main/scala/com/mydevs/database/bigquery/package.scala[lines=1..14]
+include::./src/main/scala/com/mydevs/database/bigquery/package.scala[lines=1..14]
 ----
 
 
