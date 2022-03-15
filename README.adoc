@@ -1,6 +1,5 @@
 # Spark Big Query Utils
- :author: Amadou Mamane
- :email: mamanesarki@yahoo.fr
+
  :revnumber: v1.1
  :revdate: 15.03.2022
  :revremark: First draft
@@ -16,7 +15,7 @@ Spark Big Query Utils project provides utilities for interacting with Big Query 
 
 ### Package descriptions
 
-Here is a brief description for each package of the source code.
+Here is a brief description for each package of the source code
 
 [source,scala]
 ----
