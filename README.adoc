@@ -30,7 +30,7 @@ Spark Big Query Utils project provides utilities for interacting with Big Query 
 ### Packages descriptions
 
 Here is a brief description for each package and object of the source code
-
+include::./src/main/scala/com/mydevs/database/bigquery/package.scala[lines=1..14]
 [source,scala]
 ----
 /**
@@ -43,9 +43,9 @@ Here is a brief description for each package and object of the source code
  */
 package object bigquery
 ----
-include::./src/main/scala/com/mydevs/database/bigquery/package.scala[lines=1..14]
 
-
+====
+include::./src/main/scala/com/mydevs/database/bigquery/BigQueryConnection.scala[lines=1..19]
 [source,scala]
 ----
 /**
@@ -57,9 +57,11 @@ include::./src/main/scala/com/mydevs/database/bigquery/package.scala[lines=1..14
  */
 object BigQueryConnection
 ----
-include::./src/main/scala/com/mydevs/database/bigquery/BigQueryConnection.scala[lines=1..19]
+====
 
 
+====
+include::./src/main/scala/com/mydevs/database/bigquery/BigQueryReadUtils.scala[lines=1..10]
 [source,scala]
 ----
 /**
@@ -67,9 +69,10 @@ include::./src/main/scala/com/mydevs/database/bigquery/BigQueryConnection.scala[
  */
 object BigQueryReadUtils
 ----
-include::./src/main/scala/com/mydevs/database/bigquery/BigQueryReadUtils.scala[lines=1..10]
+====
 
-
+====
+include::./src/main/scala/com/mydevs/database/bigquery/BigQueryWriteUtils.scala[lines=1..13]
 [source,scala]
 ----
 /**
@@ -77,4 +80,4 @@ include::./src/main/scala/com/mydevs/database/bigquery/BigQueryReadUtils.scala[l
  */
 object BigQueryWriteUtils
 ----
-include::./src/main/scala/com/mydevs/database/bigquery/BigQueryWriteUtils.scala[lines=1..13]
+====
