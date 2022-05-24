@@ -23,7 +23,7 @@ Here is a brief description for each package and object of the source code
 
 [source,scala]
 ----
-include::./src/main/scala/com/mydevs/database/bigquery/package.scala[lines=1..14]
+include::/spark-bigquery-utils/src/main/scala/com/mydevs/database/bigquery/package.scala[lines=1..14]
 ----
 
 
