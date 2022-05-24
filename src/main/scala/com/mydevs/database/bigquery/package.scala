@@ -6,7 +6,7 @@ package com.mydevs.database.bigquery
  *  - writing spark dataframes into Big Query
  *  - Loading Big Query tables into spark
  *  - Creating Big Query tables dynamically
- *  - Handling Big Decimal values
+ *  - Handling Big Decimal values when writting and reading
  */
 package object bigquery {
 
