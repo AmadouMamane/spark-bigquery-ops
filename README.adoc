@@ -1,8 +1,6 @@
 # Spark Big Query Utils project
 
-ifdef::env-github[:outfilesuffix: .adoc]
-
-:imagesdir: images
+ifdef::env-github[]
 
  :revnumber: v1.1
  :revdate: 15.03.2022
@@ -27,4 +25,4 @@ include::src/main/scala/com/mydevs/database/bigquery/package.scala[lines=1..14]
 ----
 
 
-
+endif::[]
