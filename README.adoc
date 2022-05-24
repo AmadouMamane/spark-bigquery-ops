@@ -14,6 +14,12 @@
 :caution-caption: :fire:
 :warning-caption: :warning:
 
+ :revnumber: v1.1
+ :revdate: 15.03.2022
+ :revremark: initial release
+ :author: Amadou Mamane
+ :email: mamanesarki@yahoo.fr
+
 ## Project documentation
 
 
@@ -27,28 +33,48 @@ Here is a brief description for each package and object of the source code
 
 [source,scala]
 ----
-include::src/main/scala/com/mydevs/database/bigquery/package.scala[lines=1..14]
-----
-
-[source,scala]
+/**
+ * Contains utilities for interacting with Big Query using Spark
+ * This includes :
+ *  - writing spark dataframes into Big Query
+ *  - Loading Big Query tables into spark
+ *  - Creating Big Query tables dynamically
+ *  - Handling Big Decimal values when writting and reading
+ */
+package object bigquery
 ----
 include::./src/main/scala/com/mydevs/database/bigquery/package.scala[lines=1..14]
-----
 
 
 [source,scala]
+----
+/**
+ * Utilities for interacting with BigQuery using the java bigquery API.
+ *
+ * ==Overview==
+ * This includes table creation, table schema update, table existence checking
+ * More utilities will be added later
+ */
+object BigQueryConnection
 ----
 include::./src/main/scala/com/mydevs/database/bigquery/BigQueryConnection.scala[lines=1..19]
-----
 
 
 [source,scala]
+----
+/**
+ * Utilities for reading big query tables using spark bigquery connector
+ */
+object BigQueryReadUtils
 ----
 include::./src/main/scala/com/mydevs/database/bigquery/BigQueryReadUtils.scala[lines=1..10]
-----
 
 
 [source,scala]
 ----
-include::./src/main/scala/com/mydevs/database/bigquery/BigQueryWriteUtils.scala[lines=1..13]
+/**
+ * Utilities for writing into big query using spark bigquery connector
+ */
+object BigQueryWriteUtils
 ----
+include::./src/main/scala/com/mydevs/database/bigquery/BigQueryWriteUtils.scala[lines=1..13]
