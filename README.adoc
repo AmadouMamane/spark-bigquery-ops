@@ -1,7 +1,4 @@
-include::_settings_reveal.adoc[]
-
-
-# Spark Big Query Utils
+# Spark Big Query Utils project
 
 :imagesdir: images
 
