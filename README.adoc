@@ -21,7 +21,7 @@ Spark Big Query Utils project provides utilities for interacting with Big Query 
 
 Here is a brief description for each package and object of the source code
 
-include::src/main/scala/com/mydevs/database/bigquery/package.scala[lines=1..14]
+\[source, scala] \---- \include::src/main/scala/com/mydevs/database/bigquery/package.scala[lines=1..14]  \----
 
 
 [source,scala]
